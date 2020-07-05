@@ -16,6 +16,12 @@ Plug 'sickill/vim-monokai'
 Plug 'valloric/youcompleteme'
 Plug 'bfrg/vim-cpp-modern'
 
+"SOme more things for c/cpp dev 
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+Plug 'google/vim-glaive'
+
+
 call plug#end()
 
 set number
@@ -82,5 +88,6 @@ augroup CursorLineOnlyInActiveWindow
 augroup END
 
 
-"something more bright underline 
+"automatic vim formatting settings 
+autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
 
